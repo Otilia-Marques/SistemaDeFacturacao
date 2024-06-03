@@ -11,7 +11,7 @@ public class ConexaoMySql {
     private static final String URL = "jdbc:mysql://localhost:3306/SistemaDeFacturação";
     private static Connection connection;
     
-    private ConexaoMySql(){
+    public ConexaoMySql(){
         
     }
     

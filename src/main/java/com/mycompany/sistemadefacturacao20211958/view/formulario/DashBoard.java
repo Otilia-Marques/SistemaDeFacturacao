@@ -25,7 +25,7 @@ public class DashBoard extends javax.swing.JFrame {
         setLocationRelativeTo(null);
         setBackground(new Color(0, 0, 0, 0));
         inicializaFormulario(usuario.getId(), cabecalho1, this);
-        menu1.addEventoMenuSelecionado(e -> {
+        menu2.addEventoMenuSelecionado(e -> {
             menuSelectionadoIndex = e;
             formularioUsuario.setMenuSelectionadoIndex(e);
             formularioCliente.setMenuSelectionadoIndex(e);
@@ -50,7 +50,7 @@ public class DashBoard extends javax.swing.JFrame {
             throw new RuntimeException("Usuario deve estar logado");
         
         this.usuario = usuario;
-        menu1.inicializar(usuario);
+        menu2.inicializar(usuario);
         dashboardControlador = new DashboardControlador(this);
     }
 
@@ -89,7 +89,7 @@ public class DashBoard extends javax.swing.JFrame {
     }
 
     public Menu getMenu() {
-        return menu1;
+        return menu2;
     }
 
     public FormularioUsuario getFormularioUsuario() {

@@ -41,8 +41,13 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
                   <Component id="menu2" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace min="0" pref="0" max="-2" attributes="0"/>
-                  <Component id="cabecalho1" pref="830" max="32767" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="cabecalho1" pref="830" max="32767" attributes="0"/>
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="6" pref="6" max="-2" attributes="0"/>
+                          <Component id="panelPrincipal" max="32767" attributes="0"/>
+                      </Group>
+                  </Group>
               </Group>
           </Group>
         </DimensionLayout>
@@ -51,7 +56,8 @@
               <Component id="menu2" pref="660" max="32767" attributes="0"/>
               <Group type="102" attributes="0">
                   <Component id="cabecalho1" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="panelPrincipal" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -61,6 +67,10 @@
         </Component>
         <Component class="com.mycompany.sistemadefacturacao20211958.view.componentes.Cabecalho" name="cabecalho1">
         </Component>
+        <Container class="javax.swing.JPanel" name="panelPrincipal">
+
+          <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout"/>
+        </Container>
       </SubComponents>
     </Container>
   </SubComponents>

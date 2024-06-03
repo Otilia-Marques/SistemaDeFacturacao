@@ -1,5 +1,6 @@
 package com.mycompany.sistemadefacturacao20211958.view.componentes;
 
+import com.mycompany.sistemadefacturacao20211958.view.eventos.EventoMenuSelectionado;
 import com.mycompany.sistemadefacturacao20211958.view.modelos.MenuModelo;
 import java.awt.Component;
 import java.awt.event.MouseAdapter;
@@ -16,11 +17,11 @@ public class ListaMenu<E extends Object> extends JList<E>{
     private final DefaultListModel model;
     private int selectedIndex = -1;
     private int overIndex = -1;
-    //private EventoMenuSelectionado evento;
+    private EventoMenuSelectionado evento;
     
-    //public void addEventoMenuSelecionado(EventoMenuSelectionado evento) {
-    ///    this.evento = evento;
-    //}
+    public void addEventoMenuSelecionado(EventoMenuSelectionado evento) {
+        this.evento = evento;
+    }
 
     public ListaMenu() {
         setOpaque(false);
@@ -39,9 +40,9 @@ public class ListaMenu<E extends Object> extends JList<E>{
                         
                         if (menuModelo.getTipoMenu().equals(MenuModelo.TipoMenu.MENU)) {
                             selectedIndex = index;
-                            //if (evento != null) {
-                            //    evento.selectionado(index);
-                            //}
+                            if (evento != null) {
+                                evento.selectionado(index);
+                            }
                         }
                     } else {
                         selectedIndex = index;
@@ -78,7 +79,6 @@ public class ListaMenu<E extends Object> extends JList<E>{
                     }
                 }
             }
-            
         });
     }
 

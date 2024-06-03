@@ -15,7 +15,7 @@ import javax.swing.ImageIcon;
 
 public class Menu extends javax.swing.JPanel {
     
-    //private EventoMenuSelectionado evento;
+    private EventoMenuSelectionado evento;
 
     public Menu() {
         initComponents();
@@ -61,10 +61,10 @@ public class Menu extends javax.swing.JPanel {
         //listaMenu1.adicionarItem(new MenuModelo("", "", VAZIO));
     }
     
-    /*public void addEventoMenuSelecionado(EventoMenuSelectionado evento) {
+    public void addEventoMenuSelecionado(EventoMenuSelectionado evento) {
         this.evento = evento;
         listaMenu1.addEventoMenuSelecionado(evento);
-    }*/
+    }
 
     @Override
     protected void paintComponent(Graphics g) {

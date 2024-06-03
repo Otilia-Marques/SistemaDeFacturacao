@@ -39,10 +39,10 @@ No terminal:
 
 3. Configure o banco de dados no arquivo `application.properties`:
    
-   spring.datasource.url=jdbc:mysql://localhost:3306/SistemaDeFacturacao 
-   spring.datasource.username=seu-usuario
-   spring.datasource.password=sua-senha
-   spring.jpa.hibernate.ddl-auto=update
+   - `spring.datasource.url` = jdbc:mysql://localhost:3306/SistemaDeFacturacao 
+   - `spring.datasource.username` = seu-usuario
+   - `spring.datasource.password` = sua-senha
+   - `spring.jpa.hibernate.ddl-auto`= update
    
 
 4. Execute o projeto usando Maven:

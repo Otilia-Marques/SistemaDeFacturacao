@@ -17,7 +17,7 @@ O objetivo é proporcionar uma ferramenta eficiente e intuitiva para gerenciar p
 - **Linguagem de Programação**: Java
 - **Interface Gráfica**: Swing
 - **Persistência de Dados**: MySQL
-- **Frameworks**: Spring Boot (para serviços e segurança), MigLayout (para layout), JPA/Hibernate (para ORM)
+- **Frameworks**: Spring Boot (para serviços e segurança), MigLayout (para layout)
 - **Ferramentas de Build**: Maven
 
 ## Pré-requisitos

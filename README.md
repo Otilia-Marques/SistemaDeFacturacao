@@ -37,7 +37,7 @@ No terminal:
    cd SistemaDeFacturacao
    
 
-3. Configure o banco de dados no arquivo `application.properties`:
+2. Configure o banco de dados no arquivo `application.properties`:
    
    - `spring.datasource.url` = jdbc:mysql://localhost:3306/SistemaDeFacturacao 
    - `spring.datasource.username` = seu-usuario
@@ -45,7 +45,7 @@ No terminal:
    - `spring.jpa.hibernate.ddl-auto`= update
    
 
-4. Execute o projeto usando Maven:
+3. Execute o projeto usando Maven:
    
    mvn spring-boot:run
    
